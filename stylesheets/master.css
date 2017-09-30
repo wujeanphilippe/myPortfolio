@@ -1,0 +1,273 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.anim.hinge {
+  -webkit-animation-duration: 300ms;
+  -moz-animation-duration: 300ms;
+  -ms-animation-duration: 300ms;
+  -o-animation-duration: 300ms;
+  animation-duration: 300ms;
+}
+
+.anim {
+  -webkit-animation-duration: 300ms;
+  -moz-animation-duration: 300ms;
+  -ms-animation-duration: 300ms;
+  -o-animation-duration: 300ms;
+  animation-duration: 300ms;
+}
+
+/* FadeInDown */
+    
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+  }
+}
+
+@-moz-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+  }
+}
+
+@-o-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -o-transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  -moz-animation-name: fadeInDown;
+  -o-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+/* end */
+
+/* font */
+
+@font-face {
+  font-family: "OpenSans-Light";
+    src: url('OpenSans-Light.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+h1, h2, p {
+  margin: 0;
+  font-family: "OpenSans-Light", Helvetica, sans-serif;
+}
+
+/* end */
+
+body {
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: "liga" on;
+  text-rendering: optimizeLegibility;
+  transition: visibility 0s linear 0s,opacity .4s 0s;
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  background: #FFFFFF;
+}
+
+/* resize */
+
+@media (min-width: 0px) {
+ 
+  .nav-logo {
+    max-width: 35px!important;
+  }
+
+  .app-box-wrapper {
+	display: flex;
+	flex-direction: column!important;
+  }
+}
+
+@media (min-width: 350px) {
+ 
+  .nav-logo {
+    max-width: 45px!important;
+  }
+}
+
+@media (min-width: 1024px) {
+ 
+  .app-box-wrapper {
+    flex-direction: row!important;
+  }
+}
+
+/* end */
+
+/* float */
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+/* end*/
+
+/* 1000px wrapper */
+
+.nav-bar-wrapper, .cover-wrapper, .footer-wrapper {
+  max-width: 1000px;
+  padding: 0px 25px;
+  margin: 0 auto;
+}
+
+/* end */
+
+/* Nav */
+
+.nav-bar {
+  margin-top: 40px;
+  height: 100px;
+  border-bottom: 1px solid #7d97ad;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-title, .nav-sub-title {
+  font-family: "OpenSans-Light", Helvetica, sans-serif;
+  font-weight: lighter;
+  font-size: 28px;
+  color: #2d3c49;
+  text-align: right;
+}
+
+.nav-sub-title {
+  font-size: 18px!important;
+  color: #7d97ad!important;
+  padding-top: 5px;
+}
+
+/* end */
+
+/* feature-box */
+
+.cover-work {
+  max-width: 1280px;
+  width: 100%;
+  overflow: hidden!important;
+  margin-top: 35px;
+}
+
+.cover-work img {
+  max-width: 1280px;
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+  top: 0;
+  left: 0;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+/* end */
+
+/* portfolio section */
+
+.portfolio-wrapper {
+  margin: 30px auto 35px;
+  max-width: 1000px;
+  padding: 0px 15px;
+}
+
+h1 {
+  color: #2d3c49!important;
+  font-weight: 100;
+  font-size: 22px;
+  margin-left: 10px;
+}
+
+h2 {
+  color: #2d3c49!important;
+  font-weight: 100;
+  font-size: 20px;
+  letter-spacing: 0.01em;
+}
+
+p {
+  color: #7d97ad!important;
+  font-weight: 100;
+  font-size: 15px;
+}
+
+.app-link {
+  max-width: 320px;
+  margin-top: 5px;
+  word-wrap: break-word;
+}
+
+.app-name {
+  margin-top: 25px;
+}
+
+.app-box {
+  margin-top: 25px;
+  padding: 0px 10px;
+}
+
+.app-box-image {
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+  top: 0;
+  left: 0;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+/* end */
+
+/* footer */
+
+.footer-wrapper {
+  height: 100px;
+  border-top: 1px solid #7d97ad;
+  max-width: 950px;
+}
+
+/* end */
